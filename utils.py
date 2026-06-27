@@ -441,7 +441,8 @@ def print_composition(particle_sets,sets_names):
 
 
 def event_info(event,beam_instrumentation):
-    #binary search for the event
+    """Returns the information event (int) given by the beam instrumentation as a dict
+    beam_instrumentation is sorted by 'Event' id so this is a binary search"""
     left  = 0
     right = len(beam_instrumentation)-1
 
